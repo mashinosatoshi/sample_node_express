@@ -1,6 +1,6 @@
-import exec1 from "./exec1";
-import exec2 from "./exec2";
-import exec3 from "./exec3";
+import exec1 from "./singleton/exec1";
+import exec2 from "./singleton/exec2";
+import exec3 from "./singleton/exec3";
 import express from "express";
 import cookieParser from "cookie-parser";
 
