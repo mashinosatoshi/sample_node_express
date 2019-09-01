@@ -22,6 +22,9 @@ https://barikanblog.com/javascript-es6-babel/
 ## cookie-parser
 https://www.utali.io/entry/2016/10/05/031358
 
+## singleton
+  https://qiita.com/kenju/items/54760d292d8fbddb1015
+
 ## ビルド
 npm run build
 
