@@ -35,4 +35,5 @@ npm run start
 curl.exe http://localhost:3000/cookie -H 'Cookie: foo=6; bar=28; baz=496'
 
 curl.exe http://localhost:3000/singleton/read
+
 curl.exe http://localhost:3000/singleton/change
