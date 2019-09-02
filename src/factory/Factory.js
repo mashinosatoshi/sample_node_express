@@ -1,41 +1,35 @@
-class Factory {
+module.exports = class Factory {
     constructor (type) {
-        var employee;
-
         if (type === "fulltime") {
-            employee = new fullTime();
+            this.hourly = fullTime();
         } else if (type === "parttime") {
-            employee = new partTime();
+            this.hourly = partTime();
         } else if (type === "temporary") {
-            employee = new temporary();
+            this.hourly = temporary();
         } else if (type === "contractor") {
-            employee = new contractor();
+            this.hourly = contractor();
         }
-
-        employee.type = type;
-
-        return employee;
+        this.type = type;
+        return this;
     }
 
-    say() {
+    say () {
         return this.type + ": rate " + this.hourly + "/hour";
     }
 }
 
-const fullTime = function () {
-    this.hourly = "$12";
+function fullTime () {
+    return "$12";
 };
 
-const partTime = function () {
-    this.hourly = "$11";
+function partTime () {
+    return "$11";
 };
 
-const temporary = function () {
-    this.hourly = "$10";
+function temporary () {
+    return "$10";
 };
 
-const contractor = function () {
-    this.hourly = "$15";
+function contractor () {
+    return "$15";
 };
-
-export default Factory;

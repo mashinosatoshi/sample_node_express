@@ -22,8 +22,8 @@ https://barikanblog.com/javascript-es6-babel/
 ## cookie-parser
 https://www.utali.io/entry/2016/10/05/031358
 
-## singleton
-  https://qiita.com/kenju/items/54760d292d8fbddb1015
+## デザインパターン
+https://qiita.com/kenju/items/4d32598ffddf86af82f2
 
 ## ビルド
 npm run build
@@ -37,3 +37,5 @@ curl.exe http://localhost:3000/cookie -H 'Cookie: foo=6; bar=28; baz=496'
 curl.exe http://localhost:3000/singleton/read
 
 curl.exe http://localhost:3000/singleton/change
+
+curl.exe http://localhost:3000/factory
