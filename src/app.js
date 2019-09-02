@@ -1,6 +1,7 @@
 import exec1 from "./singleton/exec1";
 import exec2 from "./singleton/exec2";
 import exec3 from "./singleton/exec3";
+import factory from "./factory/main";
 import express from "express";
 import cookieParser from "cookie-parser";
 
@@ -28,6 +29,11 @@ app.get('/singleton/read', (req, res) => {
 app.get('/singleton/change', (req, res) => {
     exec3();
     res.send('set singleton!');
+});
+
+app.get('/factory', (req, res) => {
+    factory();
+    res.send('exec factory!');
 });
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
