@@ -3,6 +3,8 @@ import exec2 from "./singleton/exec2";
 import exec3 from "./singleton/exec3";
 import factory from "./factory/main";
 import iterator from "./iterator/main";
+import decorator from "./decorator/main";
+
 import express from "express";
 import cookieParser from "cookie-parser";
 
@@ -40,6 +42,11 @@ app.get('/factory', (req, res) => {
 app.get('/iterator', (req, res) => {
     iterator();
     res.send('exec iterator!');
+});
+
+app.get('/decorator', (req, res) => {
+    decorator();
+    res.send('exec decorator!');
 });
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
