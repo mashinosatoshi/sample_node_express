@@ -1,6 +1,6 @@
 import Iterator from "./Iterator";
 export default function () {
-    const i = new Iterator('fulltime')
+    const i = new Iterator()
     
     i.add("man");
     i.add("satoshi");

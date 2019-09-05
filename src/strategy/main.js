@@ -1,3 +1,6 @@
+import isNonEmpty from "./isNonEmpty";
+import isNumber from "./isNumber";
+
 //import validator from "./strategy_proto";
 import validator from "./strategy_class";
 
@@ -10,9 +13,6 @@ export default function () {
         password   : "password"
     };
 
-    validator.execute(data);
-    if (validator.hasErrors()) {
-        const msg = validator.messages.join("\n")
-        console.log(msg);
-    }
+    console.log(validator.execute(data.first_name, isNonEmpty));
+    console.log(validator.execute(data.first_name, isNumber));
 }
