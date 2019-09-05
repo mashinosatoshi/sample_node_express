@@ -5,7 +5,6 @@ class Core {
             return Core.instance;
         }
         
-        console.log("Create new instance");
         this.number = String(Math.random());
         Core.instance = this;
     }
