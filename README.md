@@ -39,3 +39,7 @@ curl.exe http://localhost:3000/singleton/read
 curl.exe http://localhost:3000/singleton/change
 
 curl.exe http://localhost:3000/factory
+
+curl.exe http://localhost:3000/iterator
+
+curl.exe http://localhost:3000/strategy
