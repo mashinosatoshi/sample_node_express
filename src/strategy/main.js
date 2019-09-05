@@ -1,4 +1,5 @@
-import validator from "./strategy_proto";
+//import validator from "./strategy_proto";
+import validator from "./strategy_class";
 
 export default function () {
     var data = { 
