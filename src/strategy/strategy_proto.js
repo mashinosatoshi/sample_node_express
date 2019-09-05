@@ -10,20 +10,22 @@ var validator = {
     config : {},
 
     // data = { key : value }
-    validate : function( data ){
-        var i, msg, type, checker, result_ok;
+    execute : function( data ){
+        let msg;
 
         // resets all error messages at first
         this.messages = [];
 
-        for (i in data){
-            if ( data.hasOwnProperty(i)){
-                type = this.config[i];
-                checker = this.types[type];
+        for (let i in data){
+            if ( data[i] ){
+                var type = this.config[i];
 
                 if(!type){
                     continue; // no more necessary for validating
                 }
+
+                var checker = this.types[type];
+
                 if(!checker){
                     throw {
                         name : "ValidationError",
@@ -31,9 +33,10 @@ var validator = {
                     };
                 }
 
-                result_ok = checker.validate(data[i]);
+                var result_ok = checker.validate(data[i]);
                 if (!result_ok){
                     msg = "Invalid value for *" + i + "*, " + checker.instructions;
+                    console.log(msg);
                     this.messages.push(msg);
                 }
             }
@@ -41,7 +44,7 @@ var validator = {
         return this.hasErrors();
     },
 
-    hasErrors : function(){
+    hasErrors: function () {
         return this.messages.length !== 0;
     }
 };

@@ -1,4 +1,4 @@
-import validator from "./Strategy";
+import validator from "./strategy_proto";
 
 export default function () {
     var data = { 
@@ -9,8 +9,9 @@ export default function () {
         password   : "password"
     };
 
-    validator.validate(data);
-    if(validator.hasErrors()){
-        console.log(validator.messages.join("\n"));
+    validator.execute(data);
+    if (validator.hasErrors()) {
+        const msg = validator.messages.join("\n")
+        console.log(msg);
     }
 }
