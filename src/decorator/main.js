@@ -1,5 +1,7 @@
 import Rectangle from "./Rectangle";
-
+/**
+ * 本当はもっとOOPライクにデコレーションしたかっただろうに
+ */
 export default function () { 
     const rect = new Rectangle(10, 20);
 
