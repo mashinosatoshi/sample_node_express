@@ -1,4 +1,7 @@
 import Iterator from "./Iterator";
+/**
+ * どんなクラスをも、確実に順番に処理するよう深くクラスに刻み込んだ
+ */
 export default function () {
     const i = new Iterator()
     

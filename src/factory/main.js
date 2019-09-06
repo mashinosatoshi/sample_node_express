@@ -1,4 +1,7 @@
 import Factory from "./Factory";
+/**
+ * 引数の文字列を替えるだけでインスタンスのふるまいが変わるようにする
+ */
 export default function () {
     const fulltime = new Factory('fulltime');
     const parttime = new Factory('parttime');
