@@ -34,12 +34,20 @@ npm run start
 ## 実際にcurlを叩いてみる
 curl.exe http://localhost:3000/cookie -H 'Cookie: foo=6; bar=28; baz=496'
 
-curl.exe http://localhost:3000/singleton/read
-
-curl.exe http://localhost:3000/singleton/change
+curl.exe http://localhost:3000/singleton/
 
 curl.exe http://localhost:3000/factory
 
 curl.exe http://localhost:3000/iterator
 
+curl.exe http://localhost:3000/decorator
+
 curl.exe http://localhost:3000/strategy
+
+curl.exe http://localhost:3000/facade
+
+curl.exe http://localhost:3000/proxy
+
+curl.exe http://localhost:3000/mediator
+
+curl.exe http://localhost:3000/observer

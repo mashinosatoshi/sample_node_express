@@ -1,6 +1,8 @@
 import isNonEmpty from "./isNonEmpty";
 import isNumber from "./isNumber";
-
+/**
+ * 何をするかはこちらで用意しておいたので、好きなものを選ぶといい
+ */
 //import validator from "./strategy_proto";
 import validator from "./strategy_class";
 
