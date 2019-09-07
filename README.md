@@ -40,6 +40,14 @@ curl.exe http://localhost:3000/factory
 
 curl.exe http://localhost:3000/iterator
 
+curl.exe http://localhost:3000/decorator
+
 curl.exe http://localhost:3000/strategy
 
 curl.exe http://localhost:3000/facade
+
+curl.exe http://localhost:3000/proxy
+
+curl.exe http://localhost:3000/mediator
+
+curl.exe http://localhost:3000/observer

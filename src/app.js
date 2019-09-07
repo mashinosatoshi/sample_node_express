@@ -4,6 +4,9 @@ import iterator from "./iterator/main";
 import decorator from "./decorator/main";
 import strategy from "./strategy/main";
 import facade from "./facade/main";
+import proxy from "./proxy/main";
+import mediator from "./mediator/main";
+import observer from "./observer/main";
 
 import express from "express";
 import cookieParser from "cookie-parser";
@@ -52,6 +55,21 @@ app.get('/strategy', (req, res) => {
 app.get('/facade', (req, res) => {
     facade();
     res.send('exec facade!');
+});
+
+app.get('/proxy', (req, res) => {
+    proxy();
+    res.send('exec proxy!');
+});
+
+app.get('/mediator', (req, res) => {
+    mediator();
+    res.send('exec mediator!');
+});
+
+app.get('/observer', (req, res) => {
+    observer();
+    res.send('exec observer!');
 });
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
