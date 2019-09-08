@@ -7,6 +7,7 @@ import facade    from "./designs/facade/main";
 import proxy     from "./designs/proxy/main";
 import mediator  from "./designs/mediator/main";
 import observer  from "./designs/observer/main";
+import adapter   from "./designs/adapter/main";
 /**
  * 結局お前は一体何がしたいんだ
  * この処理自体も割とファクトリパターンっぽい
@@ -26,5 +27,6 @@ const patterns = {
     facade: facade,
     proxy: proxy,
     mediator: mediator,
-    observer: observer
+    observer: observer,
+    adapter: adapter
 }

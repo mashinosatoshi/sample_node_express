@@ -1,14 +1,8 @@
-module.exports = class Factory {
-    constructor (type) {
-        if (type === "fulltime") {
-            this.hourly = fullTime();
-        } else if (type === "parttime") {
-            this.hourly = partTime();
-        } else if (type === "temporary") {
-            this.hourly = temporary();
-        } else if (type === "contractor") {
-            this.hourly = contractor();
-        }
+import fees from "./fees"
+
+class Factory {
+    constructor(type) {
+        this.hourly = fees[type]();
         this.type = type;
         return this;
     }
@@ -18,18 +12,4 @@ module.exports = class Factory {
     }
 }
 
-function fullTime () {
-    return "$12";
-};
-
-function partTime () {
-    return "$11";
-};
-
-function temporary () {
-    return "$10";
-};
-
-function contractor () {
-    return "$15";
-};
+export default Factory;

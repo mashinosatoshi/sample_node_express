@@ -1,4 +1,8 @@
 import design_pattern from "./design_pattern";
+import prototype_test from "./js_test/prototype_test";
+import async_await from "./js_test/async_await";
+
+
 import express from "express";
 import cookieParser from "cookie-parser";
 
@@ -20,6 +24,15 @@ app.get('/cookie', (req, res) => {
 
 app.get('/design_pattern', (req, res) => {
     design_pattern(req, res);
+});
+
+app.get('/prototype_test', (req, res) => {
+    res.send(prototype_test["test1"]["test2"]["test3"]["test4"]["test5"]());
+});
+
+app.get('/async_await', (req, res) => {
+    async_await.exec()
+    res.send("async await");
 });
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
