@@ -35,9 +35,9 @@ npm run start
 ### cookie
 curl.exe http://localhost:3000/cookie -H 'Cookie: foo=6; bar=28; baz=496'
 
-
 ### デザインパターン
 curl.exe http://localhost:3000/design_pattern?pattern=[]
+- adapter
 - decorator
 - facade
 - factory
@@ -47,3 +47,10 @@ curl.exe http://localhost:3000/design_pattern?pattern=[]
 - proxy
 - singleton
 - strategy
+
+### その他テスト
+#### プロトタイプ型がどこまでネストを深くできるかの検証
+curl.exe http://localhost:3000/prototype_test
+
+#### 非同期処理やコールバックとかの検証に使う
+curl.exe http://localhost:3000/async_await
