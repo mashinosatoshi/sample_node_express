@@ -47,6 +47,7 @@ curl.exe http://localhost:3000/design_pattern?pattern=[]
 - proxy
 - singleton
 - strategy
+- template
 
 ### その他テスト
 #### プロトタイプ型がどこまでネストを深くできるかの検証
