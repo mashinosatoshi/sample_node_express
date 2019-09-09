@@ -8,6 +8,7 @@ import proxy     from "./designs/proxy/main";
 import mediator  from "./designs/mediator/main";
 import observer  from "./designs/observer/main";
 import adapter   from "./designs/adapter/main";
+import template  from "./designs/template_method/main";
 /**
  * 結局お前は一体何がしたいんだ
  * この処理自体も割とファクトリパターンっぽい
@@ -28,5 +29,6 @@ const patterns = {
     proxy: proxy,
     mediator: mediator,
     observer: observer,
-    adapter: adapter
+    adapter: adapter,
+    template: template
 }

@@ -1,6 +1,7 @@
 import Rectangle from "./Rectangle";
 /**
- * 本当はもっとOOPライクにデコレーションしたかっただろうに
+ * extendすると、勝手に値を書き換える
+ * そういうやり方もあるという事なのだろうけど、なんだかすごく怖い
  */
 export default function () { 
     const rect = new Rectangle(10, 20);
