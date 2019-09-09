@@ -1,7 +1,6 @@
-import design_pattern from "./design_pattern";
+import design_pattern from "./designs/design_pattern";
 import prototype_test from "./js_test/prototype_test";
 import async_await from "./js_test/async_await";
-
 
 import express from "express";
 import cookieParser from "cookie-parser";
