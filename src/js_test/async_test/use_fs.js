@@ -1,4 +1,4 @@
-const exec_async = function () {
+const exec = function () {
     const fs = require('fs');
 
     // 読み込みが完了したときの処理
@@ -14,4 +14,4 @@ const exec_async = function () {
 }
 
 //export default exec;
-export default exec_async;
+export default exec;
