@@ -30,7 +30,7 @@ app.get('/prototype_test', (req, res) => {
 });
 
 app.get('/async_await', (req, res) => {
-    async_await.exec()
+    async_await();
     res.send("async await");
 });
 
