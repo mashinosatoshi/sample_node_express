@@ -1,7 +1,8 @@
 # sample_node_express
 すげー雑にcookieとかを受けて表示できるようなサンプルを作りたかっただけ。
 1. cookieをヘッダに組み込む方法を勉強したよ
-2. javascriptでsingletonってどうやって実現するの
+2. javascriptでデザインパターンとかどうやって実現するのだ
+3. プロトタイプベース言語の特性とかコールバックとか非同期処理とか
 
 ## gitにつなぐならsshだよね
 https://qiita.com/shizuma/items/2b2f873a0034839e47ce
