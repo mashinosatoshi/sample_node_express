@@ -55,4 +55,8 @@ curl.exe http://localhost:3000/design_pattern?pattern=[]
 curl.exe http://localhost:3000/prototype_test
 
 #### 非同期処理やコールバックとかの検証に使う
-curl.exe http://localhost:3000/async_await
+##### 標準のファイル読み込み処理を使用したコールバック非同期処理
+curl.exe http://localhost:3000/async_use_fs
+
+##### コールバック非同期処理自分で作れるかな！！！！！！！
+curl.exe http://localhost:3000/async_make_org_callback
