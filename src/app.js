@@ -1,6 +1,7 @@
 import design_pattern from "./designs/design_pattern";
-import prototype_test from "./js_test/prototype_test";
-import async_await from "./js_test/async_await";
+import prototype_test from "./js_test/base/prototype_test";
+import async_use_fs from "./js_test/async_test/use_fs";
+import async_make_org_callback from "./js_test/async_test/make_org_callback";
 
 import express from "express";
 import cookieParser from "cookie-parser";
@@ -29,9 +30,14 @@ app.get('/prototype_test', (req, res) => {
     res.send(prototype_test["test1"]["test2"]["test3"]["test4"]["test5"]());
 });
 
-app.get('/async_await', (req, res) => {
-    async_await();
-    res.send("async await");
+app.get('/async_use_fs', (req, res) => {
+    async_use_fs();
+    res.send("async use_fs");
+});
+
+app.get('/async_make_org_callback', (req, res) => {
+    async_make_org_callback();
+    res.send("async make_org_callback");
 });
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
