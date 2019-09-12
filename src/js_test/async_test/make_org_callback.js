@@ -1,18 +1,24 @@
 const exec = function () {
 
-    // 読み込みが完了したときの処理
-    const listener = function (data) {
-        console.log(data);
-    }
-    console.log(process.argv[1]);
     // 非同期で読み込む
-    back('aaaaaaaaaaaaaaaa',listener);
+    Promise.all([
+        back('aaaaaaaa', listener),
+        back('aaaaaaaa', listener),
+        back('aaaaaaaa', listener)
+    ]);
 
     console.log("finished");
 }
-const back = function (value, callback) {
+const back = async function (value, callback) {
+    for (var i = 0; i < 100; i++) { 
+        console.log(String(i));
+    }
     callback(value);
 }
 
+// 読み込みが完了したときの処理
+const listener = function (data) {
+    console.log(data);
+}
 //export default exec;
 export default exec;
