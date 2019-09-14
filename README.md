@@ -60,3 +60,6 @@ curl.exe http://localhost:3000/async_use_fs
 
 ##### コールバック非同期処理自分で作れるかな！！！！！！！
 curl.exe http://localhost:3000/async_make_org_callback
+
+##### 非同期処理を動的に設定できるようにしたかった
+curl.exe http://localhost:3000/dynamic_async
