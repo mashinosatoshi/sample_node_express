@@ -2,6 +2,7 @@ import design_pattern from "./designs/design_pattern";
 import prototype_test from "./js_test/base/prototype_test";
 import async_use_fs from "./js_test/async_test/use_fs";
 import async_make_org_callback from "./js_test/async_test/make_org_callback";
+import dynamic_async from "./js_test/async_test/dynamic_async";
 
 import express from "express";
 import cookieParser from "cookie-parser";
@@ -38,6 +39,11 @@ app.get('/async_use_fs', (req, res) => {
 app.get('/async_make_org_callback', (req, res) => {
     async_make_org_callback();
     res.send("async make_org_callback");
+});
+
+app.get('/dynamic_async', (req, res) => {
+    dynamic_async();
+    res.send("async dynamic_async");
 });
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
